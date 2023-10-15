@@ -1,0 +1,16 @@
+{
+  "name": "boostrap",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://adrife2005.github.io/myfirstproyect",
+  "dependencies": {
+    "gh-pages": "^6.0.0"
+  }
+}

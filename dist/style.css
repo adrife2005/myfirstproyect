@@ -1,0 +1,143 @@
+* {
+    background-color: black;
+    color: white;
+}
+
+body::before{
+    display: block;
+    content: "";
+    height: 80px;
+}
+
+/* navbar */
+
+.navbar-brand {
+    color: white;
+    font-size: 1.65em;
+}
+
+.navbar-brand:hover {
+    color: white;
+}
+
+ul {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    gap: 20px;
+}
+
+.bi {
+    font-size: 1.25em;
+    color: white;
+}
+
+.bi:hover {
+    color: #00FF00;
+}
+
+.bi:focus {
+    color: blue
+}
+
+a .nav-link{
+    color: white;
+}
+
+.navbar-nav {
+    flex-direction: row;
+    padding-right: 16px;
+}
+
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: none;
+    box-shadow: none;
+
+}
+
+.navbar-toggler {
+    font-size: 30px;
+}
+
+/* about */
+
+.row {
+    height: 800px;
+}
+
+h1 {
+    font-size: 3.75rem;
+    margin-bottom: 40px;
+    color: #00FF00;
+}
+
+
+
+.span_1 {
+    animation: changeColor 6s infinite;
+}
+
+.p_1 {
+    font-size: 1.25em;
+    margin-bottom: 40px;
+    line-height: 1.5em;
+    font-weight: 500;
+}
+
+.p_0 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.25em;
+    font-weight: 700;   
+}
+
+img {
+    width: 100%; /* Establece el ancho al 100% del contenedor */
+    height: 100%; /* Establece la altura al 100% del contenedor */
+    object-fit: cover; /* Ajusta la imagen para llenar completamente el círculo */
+    border: 5px solid #FF5733; /* Establece un borde de color naranja */
+    border-radius: 20%; /* Asegura que el borde sea circular */
+    box-shadow: 0 0 10px 6px #FF5733; /* Agrega una sombra con color naranja */
+  }
+
+img::before  {
+    content: '';
+    position: absolute;
+    top: 50%; /* Ajusta la posición vertical del zoom (puedes cambiar este valor) */
+    left: 50%; /* Ajusta la posición horizontal del zoom (puedes cambiar este valor) */
+    width: 50%; /* Ajusta el ancho del zoom (puedes cambiar este valor) */
+    height: 50%; /* Ajusta la altura del zoom (puedes cambiar este valor) */
+    border: 5px solid #FF5733; /* Establece un borde de color naranja */
+    z-index: -1; /* Coloca la capa de zoom detrás de la imagen principal */
+  
+}
+
+
+/* keyframes */
+
+.span_0 {
+    animation: changeColor 6s infinite;
+}
+
+@keyframes changeColor {
+    0% {
+        color: #00FF00; /* Naranja luminoso */
+      }
+      25% {
+        color: #FF5733; /* Verde lima luminoso */
+      }
+      50% {
+        color: #00FF00; /* Naranja brillante */
+      }
+      75% {
+        color: #FF5733; /* Verde manzana luminoso */
+      }
+      100% {
+        color: #00FF00; /* Amarillo limón */
+      }
+    }
+    
+    
+    
+    
+    

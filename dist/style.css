@@ -9,11 +9,17 @@ body::before{
     height: 80px;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
 /* navbar */
 
 .navbar-brand {
     color: white;
     font-size: 1.65em;
+    font-weight: 500;
 }
 
 .navbar-brand:hover {
@@ -62,8 +68,19 @@ a .nav-link{
 
 /* about */
 
-.row {
-    height: 800px;
+.a_0 {
+    color: #0d6efd;
+    margin-bottom: 3px;
+    border-bottom: 2px solid #0d6efd;
+}
+
+.a_0:focus {
+    color: #00FF00;
+    border-bottom: 2px solid #00FF00 ;
+}
+
+#showcase .row {
+    height: 700px;
 }
 
 h1 {
@@ -72,15 +89,13 @@ h1 {
     color: #00FF00;
 }
 
-
-
 .span_1 {
     animation: changeColor 6s infinite;
 }
 
 .p_1 {
-    font-size: 1.25em;
-    margin-bottom: 40px;
+    font-size: 1.35em;
+    margin-bottom: 60px;
     line-height: 1.5em;
     font-weight: 500;
 }
@@ -92,26 +107,48 @@ h1 {
 }
 
 img {
-    width: 100%; /* Establece el ancho al 100% del contenedor */
-    height: 100%; /* Establece la altura al 100% del contenedor */
-    object-fit: cover; /* Ajusta la imagen para llenar completamente el círculo */
-    border: 5px solid #FF5733; /* Establece un borde de color naranja */
-    border-radius: 20%; /* Asegura que el borde sea circular */
-    box-shadow: 0 0 10px 6px #FF5733; /* Agrega una sombra con color naranja */
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+    border: 5px solid #FF5733; 
+    border-radius: 20%; 
+    box-shadow: 0 0 10px 6px #FF5733; 
   }
 
-img::before  {
+#showcase img::before  {
     content: '';
     position: absolute;
-    top: 50%; /* Ajusta la posición vertical del zoom (puedes cambiar este valor) */
-    left: 50%; /* Ajusta la posición horizontal del zoom (puedes cambiar este valor) */
-    width: 50%; /* Ajusta el ancho del zoom (puedes cambiar este valor) */
-    height: 50%; /* Ajusta la altura del zoom (puedes cambiar este valor) */
-    border: 5px solid #FF5733; /* Establece un borde de color naranja */
-    z-index: -1; /* Coloca la capa de zoom detrás de la imagen principal */
-  
+    top: 50%; 
+    left: 50%; 
+    width: 50%; 
+    height: 50%; 
+    border: 5px solid #FF5733; 
+    z-index: -1; 
 }
 
+#proyects img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+    border: 2px solid darkgray; 
+    border-radius: 0%; 
+    box-shadow: 0 0 5px 6px darkgray; 
+}
+
+.texto-oculto {
+    width: 96%;
+    height: 100%;
+    position: absolute; /* Establece la posición absoluta para que el texto se superponga a la imagen */
+    text-align: start;
+    background-color: rgba(0, 0, 0, 0.7); /* Establece un fondo semi-transparente para el texto */
+    color: white; /* Establece el color del texto */
+    padding: 10px; /* Agrega relleno alrededor del texto para mayor legibilidad */
+    display: none; /* Inicialmente, oculta el texto */
+  }
+  
+  .card:hover .texto-oculto {
+    display: block; /* Hace que el texto sea visible cuando se pasa el ratón sobre el contenedor */
+  }
 
 /* keyframes */
 
@@ -138,6 +175,90 @@ img::before  {
     }
     
     
+/* media querys */
+
+@media (max-width:1400px) {
+    h1 {
+        font-size: 3rem;
+        margin-bottom: 40px;
+        color: #00FF00;
+    }
+    .p_1 {
+        font-size: 1.35em;
+        margin-bottom: 40px;
+        line-height: 1.5em;
+        font-weight: 500;
+    }
+    .p_0 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.15em;
+        font-weight: 700;   
+    }
+    img {
+        width: 100%;
+        height: 350px; 
+        object-fit: cover; 
+        border: 5px solid #FF5733; 
+        border-radius: 20%; 
+        box-shadow: 0 0 10px 6px #FF5733; 
+      }
+}
+
+@media (max-width:1200px) {
+    h1 {
+        font-size: 2.5em;
+    }
+    .p_1 {
+        font-size: 1.25em;
+        margin-bottom: 40px;
+        line-height: 1.5em;
+        font-weight: 500;
+    }
+    .p_0 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.15em;
+        font-weight: 700;   
+    }
+    img {
+        width: 100%;
+        height: 300px; 
+        object-fit: cover; 
+        border: 5px solid #FF5733; 
+        border-radius: 20%; 
+        box-shadow: 0 0 10px 6px #FF5733; 
+      }
+}
     
-    
+@media (max-width:996px) {
+    h1 {
+        font-size: 2em;
+    }
+    .p_1 {
+        font-size: 1.15em;
+        margin-bottom: 40px;
+        line-height: 1.5em;
+        font-weight: 500;
+    }
+    .p_0 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.05em;
+        font-weight: 700;   
+    }
+    img {
+        width: 100%;
+        height: 300px; 
+        object-fit: cover; 
+        border: 5px solid #FF5733; 
+        border-radius: 20%; 
+        box-shadow: 0 0 10px 6px #FF5733; 
+      }
+}
+
+@media (max-width:768px) {
+
+}
+
+@media (max-width:576px) {
+
+}
     

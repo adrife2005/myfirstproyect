@@ -14,12 +14,26 @@ a {
     color: white;
 }
 
+i {
+    font-size: 2em;
+}
+
+.container {
+    opacity: 0; /* Establece la opacidad inicial en 0 para ocultar el texto */
+    transform: translateY(50px); /* Desplaza el texto hacia arriba */
+    animation: aparecer 1s ease forwards; /* Aplica una animación llamada "aparecer" */
+  }
+
 /* navbar */
 
 .navbar-brand {
     color: white;
     font-size: 1.4em;
     font-weight: 500;
+}
+
+.span_0 {
+    animation: changeColor 6s infinite;
 }
 
 .navbar-brand:hover {
@@ -33,7 +47,7 @@ ul {
     gap: 20px;
 }
 
-.bi {
+.nav-item .bi {
     font-size: 1.25em;
     color: white;
 }
@@ -131,18 +145,26 @@ h1 {
 
 #proyects .row {
     margin-top: 100px;
+    align-items: center;
+    justify-content: center;
 }
 
-.card-body {
+.card {
     width: 100%;
     height: 100%; 
     object-fit: cover; 
-    border: 2px solid darkgray; 
+    border: 2px solid #0d6efd; 
     border-radius: 0%; 
-    box-shadow: 0 0 5px 6px darkgray; 
+    box-shadow: 0 0 5px 6px #0d6efd; 
 } 
 
+#proyects img {
+    border-radius: 15px;
+    border: 3px solid white;
+}
 
+
+  
 
 
 
@@ -151,9 +173,12 @@ h1 {
 
 /* keyframes */
 
-.span_0 {
-    animation: changeColor 6s infinite;
-}
+@keyframes aparecer {
+    to {
+      opacity: 1; /* Aumenta la opacidad para hacer que el texto aparezca gradualmente */
+      transform: translateY(0); /* Restablece la posición vertical */
+    }
+  }
 
 @keyframes changeColor {
     0% {

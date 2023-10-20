@@ -41,7 +41,7 @@ i {
     color: white;
 }
 
-ul {
+#navbar ul {
     list-style: none;
     text-decoration: none;
     color: white;
@@ -167,7 +167,23 @@ h1 {
     border-bottom: 1px solid darkgray;
 }
 
+/* contact */
 
+.list-group-item {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    padding: 5px 5px 5px 5px;
+}
+
+#Contact ul {
+   gap: 20;
+}
+
+#Contact .bi {
+    color: white;
+    font-size: 28px;
+}
   
 
 

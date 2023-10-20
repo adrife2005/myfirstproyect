@@ -177,12 +177,12 @@ h1 {
 }
 
 #Contact ul {
-   gap: 20;
+   gap: 0px;
 }
 
 #Contact .bi {
     color: white;
-    font-size: 28px;
+    font-size: 25px;
 }
   
 

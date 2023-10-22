@@ -95,7 +95,7 @@ a .nav-link{
 }
 
 #showcase .row {
-    height: 75vh;
+    min-height: 75vh;
 }
 
 h1 {
@@ -299,7 +299,9 @@ h1 {
 }
 
 @media (max-width:768px) {
-
+    .p_0 {
+        margin-bottom: 50px; 
+    }
 }
 
 @media (max-width:576px) {

@@ -1,12 +1,15 @@
-const form = document.querySelector('form')
-const input = document.querySelectorAll('input[type="email"]')
+// const form = document.querySelector('form')
 
+// form.addEventListener('submit', e => {
+//     if (!form.checkValidity()) {
+//         e.preventDefault();
+//     }
+    
+//     const email = document.querySelector('input[type="email"]').value;
+//     const text = document.querySelector('input[type="text"]').value;
 
-
-form.addEventListener('submit', e => {
-    if (!form.checkValidity()) {
-        e.preventDefault();
-    }
-
-    form.classList.add('was-validated')
-});
+//     form.classList.add('was-validated')
+//     console.log(email)
+//     console.log(text)
+    
+// });

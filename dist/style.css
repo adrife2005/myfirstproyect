@@ -104,6 +104,10 @@ h1 {
     color: #00FF00;
 }
 
+.jquery {
+    color: #00FF00;
+}
+
 .span_1 {
     animation: changeColor 6s infinite;
 }
@@ -183,6 +187,10 @@ h1 {
 #Contact .bi {
     color: white;
     font-size: 25px;
+}
+
+.was-validated .form-control:valid {
+border: 3px solid;
 }
   
 

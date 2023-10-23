@@ -7,6 +7,7 @@
      rel="stylesheet" 
      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
      crossorigin="anonymous">
+     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
      <link rel="stylesheet" href="style.css">
      <title>adrife.div</title>
@@ -50,7 +51,7 @@
         <div class="container">
             <div class="row justify-content-between align-items-center">
                 <div class="col-md-7">
-                    <h1>Welcome to my<span class="span_1"> portfolio</span></h1>
+                    <h1>Welcome <span class="jquery">to my<span class="span_1"> portfolio</span></span></h1>
                     <p class="p_1">Hi, my name is Adrian Felipe Covarrubias Merlo 
                         and i'm 18, I am currently studying a career in telematics 
                         as a software developer and I am very interested in the 
@@ -82,7 +83,7 @@
                                  past and see all my progress.
                             </div>
                             <div class="text-end p-2">
-                                <i class="bi bi-code-slash mx-1"></i>
+                                <a href="https://adrife2005.github.io/mywebsite/" target="_blank"><i class="bi bi-code-slash mx-1"></i></a>
                                 <i class="bi bi-github mx-1"></i>
                             </div>
                         </div>
@@ -98,7 +99,7 @@
                                  bit complex because I needed to make the website responsive only using css.
                             </div>
                             <div class="text-end p-2">
-                                <i class="bi bi-code-slash mx-1"></i>
+                                <a href="https://adrife2005.github.io/myproyect/" target="_blank"><i class="bi bi-code-slash mx-1"></i></a>
                                 <i class="bi bi-github mx-1"></i>
                             </div>
                         </div>
@@ -114,7 +115,7 @@
                                 Lorem ipsum dolor sit amet consectetur.
                             </div>
                             <div class="text-end p-2">
-                                <i class="bi bi-code-slash mx-1"></i>
+                                <a href="http://127.0.0.1:5500/js_formValidation/index.html" target="_blank"><i class="bi bi-code-slash mx-1"></i></a>
                                 <i class="bi bi-github mx-1"></i>
                             </div>
                         </div>
@@ -197,7 +198,7 @@
                     </ul>
                 </div>
                 <div class="col-lg-6 mx-4 my-5">
-                    <form novalidate>
+                    <form novalidate action="https://jsonplaceholder.typicode.com/posts">
                         <div class="mb-1">
                             <label for="user" class="form-label"></label>
                             <input type="text" class="form-control form-control-lg" id="user" placeholder="Name" required>
@@ -221,9 +222,10 @@
                 </div>
             </div>
         </div>
-    </section> 
+    </section>
 
 
+    <script src="jquery.js"></script>
     <script src="app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 

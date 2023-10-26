@@ -95,12 +95,16 @@ a .nav-link{
 }
 
 #showcase .row {
-    height: 75vh;
+    min-height: 75vh;
 }
 
 h1 {
     font-size: 3.75rem;
     margin-bottom: 40px;
+    color: #00FF00;
+}
+
+.jquery {
     color: #00FF00;
 }
 
@@ -183,6 +187,10 @@ h1 {
 #Contact .bi {
     color: white;
     font-size: 25px;
+}
+
+.was-validated .form-control:valid {
+border: 3px solid;
 }
   
 
@@ -299,7 +307,9 @@ h1 {
 }
 
 @media (max-width:768px) {
-
+    .p_0 {
+        margin-bottom: 50px; 
+    }
 }
 
 @media (max-width:576px) {

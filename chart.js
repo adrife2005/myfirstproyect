@@ -3,9 +3,9 @@
 const ctx = document.getElementById('myChart');
 
 // Global Options
+
 Chart.defaults.font.size = 14;
-Chart.defaults.font.family = 'Lato';
-Chart.defaults.color = '#ffffff ';
+Chart.defaults.color = '#ffffff';
 
 
 

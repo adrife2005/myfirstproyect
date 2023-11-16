@@ -1,7 +1,7 @@
 {
   "name": "boostrap",
   "version": "1.0.0",
-  "description": "",
+  "description": "Check out my website ~ https://adrife2005.github.io/myfirstproyect/ ~",
   "main": "index.js",
   "scripts": {
     "deploy": "gh-pages -d dist"
